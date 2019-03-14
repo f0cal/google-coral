@@ -1,5 +1,5 @@
 # google-coral
-Community gathering point for Google Coral dev board and dongle help.
+Community gathering point for Google Coral dev board and dongle tidbits.
 
 # Journal
 ## 2019-02-14
