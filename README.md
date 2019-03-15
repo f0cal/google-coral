@@ -42,6 +42,7 @@ deb-src http://deb.debian.org/debian-security stable/updates main
 deb http://ftp.debian.org/debian stretch-backports main
 deb-src http://ftp.debian.org/debian stretch-backports main
 ```
+* `salt-minion` services installed and started successfully after that.
 
 # Dev Board
 ## OS notes
