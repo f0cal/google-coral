@@ -40,3 +40,10 @@ deb http://ftp.debian.org/debian stretch-backports main
 deb-src http://ftp.debian.org/debian stretch-backports main
 ```
 * `salt-minion` services installed and started successfully after that.
+
+## 2019-03-15
+
+* Decided to install OpenCV 4.0.1 from source and dealt with some challenges.
+* The dev board has <1G of RAM for compilng stuff, so this was a real issue.
+* Added a swapfile to avoid "Out of memory" errors.
+* Immediately ran out of disk space.
