@@ -5,7 +5,8 @@ Community (read: "unofficial") gathering point for Google Coral dev board and do
 | What's up?    | Where to go |
 |:--------------|:------------|
 | Got a Coral dev board. What do I do? | There's an official [Getting Started Guide][1]. |
-| Can't get something working. | The [issue][0] tracker is where we talk through problems. |
+| Can't get something working. | The [issue tracker][0] is where we talk through problems. |
+| Found something wrong in Google's docs. | Stick it in the [issue tracker][0] as a public service. |
 
 # Overview
 
