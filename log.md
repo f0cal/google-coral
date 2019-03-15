@@ -46,4 +46,8 @@ deb-src http://ftp.debian.org/debian stretch-backports main
 * Decided to install OpenCV 4.0.1 from source and dealt with some challenges.
 * The dev board has <1G of RAM for compilng stuff, so this was a real issue.
 * Added a swapfile to avoid "Out of memory" errors.
+```bash
+sudo apt-get install dphys-swapfile
+```
+* Gives us a 2GB swap file by default.
 * Immediately ran out of disk space.
