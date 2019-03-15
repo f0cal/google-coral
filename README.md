@@ -9,7 +9,7 @@ Community (read: "unofficial") gathering point for Google Coral dev board and do
 
 # Overview
 
-Officially, Google Coral is both:
+Officially, Google Coral is two devices:
 ```
 Dev Board
 A single-board computer with a removable system-on-module (SOM) featuring the Edge TPU.
