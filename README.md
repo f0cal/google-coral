@@ -2,8 +2,8 @@ Community (read: "unofficial") gathering point for Google Coral dev board and do
 
 # Start Here
 
-| What's up?   | Where to go |
-|--------------|------------:|
+| What's up?    | Where to go |
+|:--------------|:------------|
 | Got a Coral dev board. What do I do? | There's an official [Getting Started Guide][1]. |
 | Can't get something working. | The [issue][0] tracker is where we talk through problems. |
 
