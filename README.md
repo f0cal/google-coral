@@ -2,7 +2,7 @@
 Community gathering point for Google Coral dev board and dongle tidbits.
 
 # Journal
-## 2019-02-14
+## 2019-03-14
 * DevBoard showed up today; wanted to start playing with it immediately.
 * Followed the [Getting Started Guide][1] verbatim but hit some immediate roadblocks.
 
