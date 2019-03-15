@@ -1,5 +1,33 @@
-# google-coral
-Community gathering point for Google Coral dev board and dongle tidbits.
+Community (read: "unofficial") gathering point for Google Coral dev board and dongle knowledge.
+
+# Start Here
+
+| What's up?   | Where to go |
+|--------------|------------:|
+| Got a Coral dev board. What do I do? | There's an official [Getting Started Guide][1]. |
+| Can't get something working. | The [issue][0] tracker is where we talk through problems. |
+
+# Overview
+
+Officially, Google Coral is both:
+```
+Dev Board
+A single-board computer with a removable system-on-module (SOM) featuring the Edge TPU.
+*    Supported OS: Mendel Linux (derivative of Debian)
+*    Supported Framework: TensorFlow Lite
+*    Languages: Python (C++ coming soon)
+```
+and
+```
+USB Accelerator
+A USB accessory featuring the Edge TPU that brings ML inferencing to existing systems.
+*    Supported OS: Debian Linux
+*    Compatible with Raspberry Pi boards
+*    Supported Framework: TensorFlow Lite
+```
+Source: https://coral.withgoogle.com/
+
+These devices are brand-spanking new, and as of right now there is very little supporting documentation. This repo exists to help interested devs avoid the twisted hellscape that is Google Product Forums.
 
 # Journal
 ## 2019-03-14
@@ -100,6 +128,7 @@ $ cat /proc/version
 Linux version 4.9.51-imx (pbuilder@49cfd4856c32) (gcc version 6.3.0 20170516 (Debian 6.3.0-18) ) #1 SMP PREEMPT Thu Jan 31 01:58:26 UTC 2019
 ```
 
+[0]: https://github.com/f0cal/google-coral/issues
 [1]: https://coral.withgoogle.com/tutorials/devboard/
 [2]: https://github.com/saltstack/salt-bootstrap
 [3]: https://www.hiroom2.com/2017/02/21/linux-change-reference-file-of-lsb-release-from-etc-lsb-release/
