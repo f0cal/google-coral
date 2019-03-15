@@ -23,10 +23,29 @@ $ screen /dev/ttyUSB0 115200
 * I think at the end of the day this was due to `udev` persmissions because ```sudo screen /dev/ttyUSB0 115200``` got it working immediately.
 * The rest went fairly smoothly.
 * Note that if you update the hostname in `/etc/hostname` you should do the same in `/etc/hosts` otherwise you'll see a bunch of complaints about `sudo` not being able to resolve the hostname.
+* The first thing I tried to do that was "out of bounds" was to install a `salt-minion` via the standard [bootstrap script][2].
+* I quickly hit a problem there in that `lsb_release` reports "Mendel" even though the board is basically running Debian Stretch. More on that below in the "OS Notes" section.
+* I forced `lsb_release` to report what I wanted it to by using [this hack][3].
+* Then I added the Debian Stetch sources (see next) so the bootstrap could install what it needed to.
+
+```bash
+$ cat /etc/apt/sources.list.d/debian-stretch.list
+deb http://deb.debian.org/debian/ stable main contrib non-free
+deb-src http://deb.debian.org/debian/ stable main contrib non-free
+
+deb http://deb.debian.org/debian/ stable-updates main contrib non-free
+deb-src http://deb.debian.org/debian/ stable-updates main contrib non-free
+
+deb http://deb.debian.org/debian-security stable/updates main
+deb-src http://deb.debian.org/debian-security stable/updates main
+
+deb http://ftp.debian.org/debian stretch-backports main
+deb-src http://ftp.debian.org/debian stretch-backports main
+```
 
 # Dev Board
 ## OS notes
-* Given the observations, below, the OS appears to be based on Debian Stretch.
+* Given the observations below (primarily the `libc` version) the OS appears to be an upgraded-to-testing version of Debian 9.0 (Stretch). This knowledge allows us to access Debian sources without much concern.
 
 ```bash
 $ lsb_release -a
@@ -34,6 +53,11 @@ No LSB modules are available.
 Distributor ID:	Mendel
 Description:	Mendel GNU/Linux Beaker
 Release:	mendel-beaker
+```
+
+```bash
+$ cat /etc/debian_version
+buster/sid
 ```
 
 ```bash
@@ -76,3 +100,5 @@ Linux version 4.9.51-imx (pbuilder@49cfd4856c32) (gcc version 6.3.0 20170516 (De
 ```
 
 [1]: https://coral.withgoogle.com/tutorials/devboard/
+[2]: https://github.com/saltstack/salt-bootstrap
+[3]: https://www.hiroom2.com/2017/02/21/linux-change-reference-file-of-lsb-release-from-etc-lsb-release/
