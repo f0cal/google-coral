@@ -51,3 +51,5 @@ sudo apt-get install dphys-swapfile
 ```
 * Gives us a 2GB swap file by default.
 * Immediately ran out of disk space.
+
+[3]: https://www.hiroom2.com/2017/02/21/linux-change-reference-file-of-lsb-release-from-etc-lsb-release/
