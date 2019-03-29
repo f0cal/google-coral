@@ -32,7 +32,7 @@ These devices are brand-spanking new, and as of right now there is very little s
 
 # Dev Board
 ## OS notes
-* Given the observations below (primarily the `libc` version) the OS appears to be an upgraded-to-testing version of Debian 9.0 (Stretch). This knowledge allows us to access Debian sources without much concern.
+* Given the observations below (primarily the `libc` version) the OS appears to be a stock version of Debian 9.0 (Stretch). This knowledge allows us to access Debian sources without much concern.
 
 ```bash
 $ lsb_release -a
